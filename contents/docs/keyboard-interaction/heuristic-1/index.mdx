@@ -1,30 +1,23 @@
 ---
-title: Are buttons, links, and other CTAs designed to consider both hover and focus states?
-description: Keyboard Interaction - Heuristic 1
+title: Is tabbing order predictable, logical, and intuitive?
 ---
 
 ### What this means
-This one’s about making sure that when someone interacts with a button or link, whether using a mouse or a keyboard, they actually get some visual feedback.
+When someone uses the keyboard to move through a page, typically by pressing the `Tab` key, the order in which elements receive focus should make sense. Focus should follow the visual reading flow of the page. That usually means top to bottom and left to right.
 
-With a mouse, it’s easy. You hover over something, and it changes color, underlines, glows, or something similar. But people who use a keyboard don’t hover, they tab through the page. So instead of hover styles, they rely on focus styles to know where they are.
-
-This heuristic is basically asking:
-**“Are we styling for both types of users, mouse and keyboard?”**
+If the tabbing order jumps around unexpectedly or skips important elements, it makes the interface harder to use and understand.
 
 ### Why this matters
-A lot of sites look fine when you use a mouse, but if you tab through them, it’s like nothing’s happening. There’s no visual sign that you’re on a button or link, even though you technically are. That makes things confusing or totally unusable for keyboard users.
+Keyboard users do not experience the whole interface at once. They move through it one element at a time. If the tab order is unpredictable, people can get lost, miss key actions, or become confused about where they are. That can result in missed content, broken tasks, and a frustrating experience.
 
-It’s not enough to just design for hover, we have to think about focus too. Both matter.
-If someone can't see which element is currently focused, they might accidentally activate the wrong thing, like submitting a form too early, clicking the wrong link, or skipping something important altogether.
+For users of screen readers, the tabbing order is also how content is announced. A logical, intuitive flow improves usability for everyone.
 
 ### What to check for
-- Are there visible changes when hovering and focusing on buttons or links?
-- Does the focus style stand out enough to be noticed?
-- Do custom UI components (like dropdowns or sliders) also respond to focus?
-- Has the `:focus` style been forgotten or removed completely?
+- Does focus move from top to bottom and left to right in a way that matches the visual layout?
+- Are key elements, like buttons and form fields, included in the tab order?
+- Do modals and overlays move focus into the new content when opened?
+- When those elements close, does focus return to where it started?
+- Are there any elements that unexpectedly receive focus, such as hidden or offscreen items?
 
 ### Related Standards
-- **WCAG 2.1 – 1.4.13:** Content on Hover or Focus
-- **WCAG 2.1 – 2.4.7:** Focus Visible
-- **Section 508 – §1194.21(c)**
-
+- **[WCAG 2.2 – 2.4.3](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html)** - Focus Order

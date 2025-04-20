@@ -1,0 +1,24 @@
+---
+title: Are users able to dismiss newly displayed content without moving their mouse or shifting focus?
+---
+
+### What this means
+Popups, modals, dropdowns, and other dynamic content should be easy to dismiss using only the keyboard. Users should not have to rely on a mouse or manually reset focus to continue navigating.
+
+When new content appears, it should receive focus automatically. Users should be able to close it with a clear keyboard action. Once dismissed, focus should return to the element that triggered it.
+
+### Why this matters
+For keyboard and screen reader users, unexpected content can interrupt the experience or trap them entirely. If there is no accessible way to close a popup or modal, users may become stuck, confused, or forced to reload the page.
+
+Losing focus or having it jump to a random location can be just as disruptive. Users may not know where they are or how to get back to where they were. This is especially common with cookie banners, newsletter popups, or promotional modals that do not manage focus properly.
+
+### What to check for
+- When dynamic content appears, does focus move to it automatically?
+- Is there a clear, keyboard-accessible way to close the content (such as pressing `Escape` or activating a visible close button)?
+- After dismissing the content, does focus return to the element that triggered it?
+- Are users forced to use mouse-only actions (like clicking outside) with no alternative?
+
+### Related Standards
+- **[WCAG 2.2 – 2.1.1](https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html)** - Keyboard
+- **[WCAG 2.2 – 2.4.3](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html)** - Focus Order
+- **[WCAG 2.2 – 3.2.1](https://www.w3.org/WAI/WCAG22/Understanding/on-focus.html)** - On Focus

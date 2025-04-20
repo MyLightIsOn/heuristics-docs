@@ -1,0 +1,23 @@
+---
+title: Are all calls-to-action built to fully function with keyboard and touch in addition to the mouse?
+---
+
+### What this means
+Calls-to-action, like buttons, links, icons, or custom components, should work no matter how someone interacts with them. That includes mouse, keyboard, and touch input. Users should be able to tab to, tap, or click any interactive element and get the same consistent result.
+
+Keyboard users often rely on the `Tab`, `Enter`, and `Space` keys to navigate and activate elements. Touchscreen users expect to be able to tap without friction or unusual behavior. If any of those interaction types fail, users may be unable to complete their task.
+
+### Why this matters
+It is easy to design something that looks interactive but only works with a mouse. A clickable `div` might not be focusable or operable with the keyboard. Some elements may not respond properly to touch on mobile devices or may behave unpredictably with assistive tech.
+
+If a user cannot activate a button, link, or icon using their preferred or required input method, the experience becomes broken for them. Accessibility means supporting all the ways people interact with digital content, not just the ones most familiar to us.
+
+### What to check for
+- Can you tab to every button, link, and custom component?
+- Can you activate each one using `Enter` or `Space`?
+- Do all elements respond properly on a touchscreen without requiring awkward workarounds?
+- Are custom components like modals, sliders, or dropdowns fully operable with a keyboard?
+
+### Related Standards
+- **[WCAG 2.2 – 2.1.1](https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html)** - Keyboard
+- **[WCAG 2.2 – 4.1.2](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html)** - Name, Role, Value

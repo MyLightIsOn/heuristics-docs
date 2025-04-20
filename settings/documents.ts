@@ -41,24 +41,20 @@ export const Documents: Paths[] = [
         href: "/heuristic-2",
       },
       {
-        title: "Are buttons, links, and other calls-to-action designed to consider both hover and focus states?",
+        title: "Are all calls-to-action built to fully function with keyboard and touch in addition to the mouse?",
         href: "/heuristic-3",
       },
       {
-        title: "Are all calls-to-action built to fully function with keyboard and touch in addition to the mouse?",
+        title: "Are we avoiding keyboard traps?",
         href: "/heuristic-4",
       },
       {
-        title: "Are we avoiding keyboard traps?",
+        title: "Are adjacent links pointing to unique locations combined into a single calls-to-action?",
         href: "/heuristic-5",
       },
       {
-        title: "Are adjacent links pointing to unique locations combined into a single calls-to-action?",
-        href: "/heuristic-6",
-      },
-      {
         title: "Are users able to dismiss newly displayed content without moving their mouse or shifting focus?",
-        href: "/heuristic-7",
+        href: "/heuristic-6",
       },
     ],
   },
