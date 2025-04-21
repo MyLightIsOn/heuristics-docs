@@ -1,6 +1,6 @@
-# Accessible By Design Heuristic Learning System (ABD System)
+# A11yBase Heuristic Learning System 
 
-Welcome to the **Accessible By Design (ABD) System**—a user-centered accessibility learning tool designed to help teams build more inclusive digital experiences from the start.
+Welcome to the **A11yBase **—a user-centered accessibility learning tool designed to help teams build more inclusive digital experiences from the start.
 
 ## What is the ABD System?
 
