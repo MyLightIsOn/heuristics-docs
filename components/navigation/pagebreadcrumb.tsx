@@ -23,7 +23,7 @@ export default function PageBreadcrumb({ paths }: { paths: string[] }) {
             </BreadcrumbLink>
           </BreadcrumbItem>
 
-          {paths.length > 2 ? (
+          {paths.length > 4 ? (
             <>
               <BreadcrumbSeparator />
               <BreadcrumbItem>

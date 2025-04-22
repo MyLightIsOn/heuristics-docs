@@ -312,3 +312,18 @@ span.katex-html {
     height: 0;
   }
 }
+
+/* Global Default Styles */
+
+input, button, select, a {
+  &:focus-visible {
+    outline: var(--primary) 2px dashed;
+    outline-offset: 2px;
+  }
+}
+
+a {
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,12 +1,21 @@
 import React from "react"
 
+import ExampleHeading from "@/components/navigation/example-heading"
+
+const headingText = {
+  title: "Good Tabbing Order - Accessible Form",
+  description:
+    "Press the TAB key and observe the path and order of the focus. This is the default, and most logical path for the focus to travel.",
+}
+
 export default function Page() {
   return (
-    <div className="mx-auto max-w-xl p-8">
-      <h1 className="mb-4 text-2xl font-bold">
-        Good Tabbing Order - Accessible Form
-      </h1>
-      <form className="space-y-4">
+    <div className="p-8">
+      <ExampleHeading
+        title={headingText.title}
+        text={headingText.description}
+      />
+      <form className="mx-auto max-w-xl space-y-4">
         <div>
           <label htmlFor="name" className="mb-1 block font-medium">
             Full Name
@@ -61,7 +70,7 @@ export default function Page() {
 
         <button
           type="submit"
-          className="rounded bg-blue-600 px-4 py-2 text-white hover:bg-blue-700"
+          className="rounded bg-blue-600 px-4 py-2 text-white hover:bg-blue-700 focus:bg-blue-700"
         >
           Submit
         </button>
