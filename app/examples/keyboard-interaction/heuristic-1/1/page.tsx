@@ -3,7 +3,7 @@ import React from "react"
 import ExampleHeading from "@/components/navigation/example-heading"
 
 const headingText = {
-  title: "Good Tabbing Order - Accessible Form",
+  title: "Good tab order",
   description:
     "Press the TAB key and observe the path and order of the focus. This is the default, and most logical path for the focus to travel.",
 }
