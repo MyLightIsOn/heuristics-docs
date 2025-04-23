@@ -133,6 +133,7 @@
 .diagram-container {
   display: flex;
   justify-content:left;
+  align-items: center;
   width: 100%;
   gap: 12px;
 }
@@ -146,6 +147,7 @@
   background-color: white;
   padding: 16px;
   border-color: #414141;
+  margin: auto;
 }
 
 .prose {
