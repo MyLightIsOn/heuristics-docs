@@ -2,6 +2,14 @@
 
 import React, { useEffect, useRef, useState } from "react"
 
+import ExampleHeading from "@/components/navigation/example-heading"
+
+const headingText = {
+  title: "Good modal focus order",
+  description:
+    "Press TAB until the focus is on the Open Modal button. Activate the button with the Space key. Observe how the focus jumps into the dialog. The focus can not leave the dialog when you continue to press TAB.",
+}
+
 export default function GoodModalFocus() {
   const [isOpen, setIsOpen] = useState(false)
   const modalRef = useRef<HTMLDivElement | null>(null)
@@ -22,11 +30,14 @@ export default function GoodModalFocus() {
 
   return (
     <div className="p-8">
-      <h1 className="mb-4 text-2xl font-bold">Modal - Good Focus Management</h1>
+      <ExampleHeading
+        title={headingText.title}
+        text={headingText.description}
+      />
       <button
         ref={triggerButtonRef}
         onClick={() => setIsOpen(true)}
-        className="rounded bg-blue-600 px-4 py-2 text-white hover:bg-blue-700 focus:ring-2 focus:ring-blue-400 focus:outline-none"
+        className="mx-auto block rounded bg-blue-600 px-4 py-2 text-white hover:bg-blue-700 focus:ring-2 focus:ring-blue-400 focus:outline-none"
       >
         Open Modal
       </button>
