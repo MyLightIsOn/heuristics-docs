@@ -1,5 +1,6 @@
 ---
 title: Is tabbing order predictable, logical, and intuitive?
+keywords: ["keyboard interaction", "focus", "tabbing"]
 ---
 
 ### What this means
@@ -12,12 +13,17 @@ Keyboard users do not experience the whole interface at once. They move through 
 
 For users of screen readers, the tabbing order is also how content is announced. A logical, intuitive flow improves usability for everyone.
 
-### What to check for
-- Does focus move from top to bottom and left to right in a way that matches the visual layout?
-- Are key elements, like buttons and form fields, included in the tab order?
-- Do modals and overlays move focus into the new content when opened?
-- When those elements close, does focus return to where it started?
-- Are there any elements that unexpectedly receive focus, such as hidden or offscreen items?
+### What this looks like
+<div className={'diagram-container'}>
+	<figure className={'w-1/2'}>
+		<img src={'/images/examples/keyboard-interaction/ki-h1-A.png'} alt="Good tab order"/>
+		<figcaption>Good Tab Order</figcaption>
+	</figure>
+	<figure className={"w-1/2"}>
+		<img src={'/images/examples/keyboard-interaction/ki-h1-B.png'} alt="Bad tab order"/>
+		<figcaption>Bad Tab Order</figcaption>
+	</figure>
+</div>
 
 ### What this feels like
 - **[Example 1](/examples/keyboard-interaction/heuristic-1/1)** - Good tab order
@@ -25,6 +31,12 @@ For users of screen readers, the tabbing order is also how content is announced.
 - **[Example 3](/examples/keyboard-interaction/heuristic-1/3)** - Good modal tab order
 - **[Example 4](/examples/keyboard-interaction/heuristic-1/4)** - Bad modals tab order
 
+### What to check for
+- Does focus move from top to bottom and left to right in a way that matches the visual layout?
+- Are key elements, like buttons and form fields, included in the tab order?
+- Do modals and overlays move focus into the new content when opened?
+- When those elements close, does focus return to where it started?
+- Are there any elements that unexpectedly receive focus, such as hidden or offscreen items?
 
 ### Related Standards
 - **[WCAG 2.2 – 2.4.3](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html)** - Focus Order

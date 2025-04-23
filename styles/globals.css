@@ -130,6 +130,24 @@
   @apply dark:prose-invert prose-code:text-neutral-800 dark:prose-code:bg-neutral-900 dark:prose-code:text-white dark:prose-pre:bg-neutral-900;
 }
 
+.diagram-container {
+  display: flex;
+  justify-content:left;
+  width: 100%;
+  gap: 12px;
+}
+
+.diagram-container figure {
+  max-width: 350px;
+  text-align: center;
+}
+
+.diagram-container img {
+  background-color: white;
+  padding: 16px;
+  border-color: #414141;
+}
+
 .prose {
   margin: 0 !important;
 }

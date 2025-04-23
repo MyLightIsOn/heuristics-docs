@@ -5,7 +5,7 @@ import ExampleHeading from "@/components/navigation/example-heading"
 const headingText = {
   title: "Good tab order",
   description:
-    "Press the TAB key and observe the path and order of the focus. This is the default, and most logical path for the focus to travel.",
+    "Place the cursor in the Name field. Then press the TAB key and observe how the focus order jumps around. As a user, you don't really know where it will go with each press.",
 }
 
 export default function Page() {
@@ -18,7 +18,7 @@ export default function Page() {
       <form className="mx-auto max-w-xl space-y-4">
         <div>
           <label htmlFor="name" className="mb-1 block font-medium">
-            Full Name
+            Name
           </label>
           <input
             type="text"
@@ -41,31 +41,29 @@ export default function Page() {
         </div>
 
         <div>
-          <label htmlFor="country" className="mb-1 block font-medium">
-            Country
+          <label htmlFor="area-code" className="mb-1 block font-medium">
+            Phone
           </label>
-          <select
-            id="country"
-            name="country"
-            className="w-full rounded border border-gray-300 p-2"
-          >
-            <option value="">Please choose</option>
-            <option value="us">United States</option>
-            <option value="ca">Canada</option>
-            <option value="uk">United Kingdom</option>
-          </select>
-        </div>
-
-        <div>
-          <label htmlFor="message" className="mb-1 block font-medium">
-            Message
-          </label>
-          <input
-            type="text"
-            id="message"
-            name="message"
-            className="w-full rounded border border-gray-300 p-2"
-          />
+          <div className={"flex max-w-[300px] gap-4"}>
+            <input
+              type="text"
+              id="area-code"
+              name="area code"
+              className="w-full rounded border border-gray-300 p-2"
+            />
+            <input
+              type="text"
+              id="first-three"
+              name="first three numbers of phone number"
+              className="w-full rounded border border-gray-300 p-2"
+            />
+            <input
+              type="text"
+              id="last-four"
+              name="last four numbers of phone number"
+              className="w-full rounded border border-gray-300 p-2"
+            />
+          </div>
         </div>
 
         <button

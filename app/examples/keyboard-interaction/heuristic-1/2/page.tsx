@@ -5,7 +5,7 @@ import ExampleHeading from "@/components/navigation/example-heading"
 const headingText = {
   title: "Bad tab order",
   description:
-    "Press the TAB key and observe how the focus order jumps around. As a user, you don't really know where it will go with each press.",
+    "Place the cursor in the Name field. Then press the TAB key and observe how the focus order jumps around. As a user, you don't really know where it will go with each press.",
 }
 
 export default function Page() {
@@ -17,19 +17,6 @@ export default function Page() {
       />
       <form className="mx-auto max-w-xl space-y-4">
         <div>
-          <label htmlFor="email" className="mb-1 block font-medium">
-            Email Address
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            className="w-full rounded border border-gray-300 p-2"
-            tabIndex={2}
-          />
-        </div>
-
-        <div>
           <label htmlFor="name" className="mb-1 block font-medium">
             Full Name
           </label>
@@ -38,38 +25,50 @@ export default function Page() {
             id="name"
             name="name"
             className="w-full rounded border border-gray-300 p-2"
-            tabIndex={5}
+            tabIndex={1}
           />
         </div>
 
         <div>
-          <label htmlFor="message" className="mb-1 block font-medium">
-            Message
+          <label htmlFor="email" className="mb-1 block font-medium">
+            Name
           </label>
           <input
-            type="text"
-            id="message"
-            name="message"
+            type="email"
+            id="email"
+            name="email"
             className="w-full rounded border border-gray-300 p-2"
-            tabIndex={3}
+            tabIndex={4}
           />
         </div>
 
         <div>
-          <label htmlFor="country" className="mb-1 block font-medium">
-            Country
+          <label htmlFor="area-code" className="mb-1 block font-medium">
+            Phone
           </label>
-          <select
-            id="country"
-            name="country"
-            className="w-full rounded border border-gray-300 p-2"
-            tabIndex={1}
-          >
-            <option value="">Please choose</option>
-            <option value="us">United States</option>
-            <option value="ca">Canada</option>
-            <option value="uk">United Kingdom</option>
-          </select>
+          <div className={"flex max-w-[300px] gap-4"}>
+            <input
+              type="text"
+              id="area-code"
+              name="area code"
+              className="w-full rounded border border-gray-300 p-2"
+              tabIndex={2}
+            />
+            <input
+              type="text"
+              id="first-three"
+              name="first three numbers of phone number"
+              className="w-full rounded border border-gray-300 p-2"
+              tabIndex={5}
+            />
+            <input
+              type="text"
+              id="last-four"
+              name="last four numbers of phone number"
+              className="w-full rounded border border-gray-300 p-2"
+              tabIndex={3}
+            />
+          </div>
         </div>
 
         <button

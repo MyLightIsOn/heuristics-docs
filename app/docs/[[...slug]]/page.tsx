@@ -23,7 +23,6 @@ export default async function Pages({ params }: PageProps) {
   if (!res) notFound()
 
   const { frontmatter, content, tocs } = res
-  console.log(slug)
   return (
     <div className="flex items-start gap-14">
       <section className="flex-[3] pt-10">
