@@ -61,8 +61,7 @@ export const Documents: Paths[] = [
         href: "/heuristic-6",
       },
       {
-        title:
-          "re users able to dismiss newly displayed content without moving their mouse or shifting focus?",
+        title: "Is there a skip-to-main-content link provided?",
         href: "/heuristic-7",
       },
     ],
