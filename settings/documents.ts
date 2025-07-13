@@ -4,7 +4,7 @@ export const Documents: Paths[] = [
   {
     heading: "Introduction",
     title: "Basic Setup",
-    href: "/basic-setup",
+    href: "/introduction",
     items: [
       {
         title: "Installation",
@@ -37,11 +37,13 @@ export const Documents: Paths[] = [
         href: "/heuristic-1",
       },
       {
-        title: "Is the focus indicator clearly visible when active elements receive focus?",
+        title:
+          "Is the focus indicator clearly visible when active elements receive focus?",
         href: "/heuristic-2",
       },
       {
-        title: "Are all calls-to-action built to fully function with keyboard and touch in addition to the mouse?",
+        title:
+          "Are all calls-to-action built to fully function with keyboard and touch in addition to the mouse?",
         href: "/heuristic-3",
       },
       {
@@ -49,12 +51,19 @@ export const Documents: Paths[] = [
         href: "/heuristic-4",
       },
       {
-        title: "Are adjacent links pointing to unique locations combined into a single calls-to-action?",
+        title:
+          "Are adjacent links pointing to unique locations combined into a single calls-to-action?",
         href: "/heuristic-5",
       },
       {
-        title: "Are users able to dismiss newly displayed content without moving their mouse or shifting focus?",
+        title:
+          "Are users able to dismiss newly displayed content without moving their mouse or shifting focus?",
         href: "/heuristic-6",
+      },
+      {
+        title:
+          "re users able to dismiss newly displayed content without moving their mouse or shifting focus?",
+        href: "/heuristic-7",
       },
     ],
   },
