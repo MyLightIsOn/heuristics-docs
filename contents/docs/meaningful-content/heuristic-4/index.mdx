@@ -1,0 +1,18 @@
+---
+title: Is real text used rather than images of text?
+---
+
+### What this means
+Textual content should be rendered using actual text characters, not as part of an image. When decorative styling is required, it should be achieved using CSS rather than embedding the text within a static image.
+
+### Why this matters
+Images of text are not scalable, searchable, or easily interpreted by assistive technologies. They can blur when zoomed, load slowly, or fail to adapt to user-specified font and color settings. Real text ensures that content remains accessible, especially for screen readers and users who customize visual presentation for readability. This is covered under [WCAG 1.4.5: Images of Text](https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html).
+
+### What to check
+- Confirm that all headings, paragraphs, labels, and navigation elements are created using HTML text elements.
+- Verify that decorative or styled text is implemented with CSS, not as a bitmap or image file.
+- Identify any image-based banners or buttons containing text and ensure accessible text alternatives are provided.
+- Check that zooming or resizing does not distort or blur textual content.
+
+### Related Standards
+- [WCAG 1.4.5: Images of Text](https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html)

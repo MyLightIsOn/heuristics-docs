@@ -1,0 +1,19 @@
+---
+title: Do form controls have visible meaningful text labels?
+---
+
+### What this means
+All interactive form controls (such as text inputs, checkboxes, radio buttons, dropdowns, and sliders) must have visible labels that clearly describe their purpose. These labels must be programmatically associated with their respective controls to ensure accessibility for assistive technologies.
+
+### Why this matters
+Users need to understand the function of each form control to complete tasks accurately. Screen readers rely on correctly associated label elements to convey this information. Missing or unclear labels can result in inaccessible forms, errors in submission, or total task failure.
+
+### What to check
+- Confirm that every form control has a visible label next to or above the field.
+- Verify that the label accurately describes the control’s purpose or required input.
+- Ensure labels are not replaced by placeholder text or tooltips.
+- Check that labels are programmatically linked to the form controls using proper semantic HTML (`<label for="id">`).
+
+### Related Standards
+- [WCAG 1.3.1: Info and Relationships](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html)
+- [WCAG 4.1.2: Name, Role, Value](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html)

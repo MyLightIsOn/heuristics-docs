@@ -69,257 +69,44 @@ export const Documents: Paths[] = [
   {
     spacer: true,
   },
-  /*{
-    title: "Keyboard Interaction",
-    href: "/markdown",
-    heading: "Heuristics",
+  {
+    title: "Introduction",
+    href: "/navigation",
+    heading: "Meaningful Content",
+  },
+  {
+    title: "Heuristics",
+    href: "/meaningful-content",
     items: [
       {
-        title: "Cards",
-        href: "/cards",
+        title:
+          "Are recurring navigation patterns and functionalities presented and labeled consistently throughout the system?",
+        href: "/heuristic-1",
       },
       {
-        title: "Diagrams",
-        href: "/diagrams",
+        title: "Are form labels meaningful?",
+        href: "/heuristic-2",
       },
       {
-        title: "Filetree",
-        href: "/filetree",
+        title: "Are we avoiding keyboard traps?",
+        href: "/heuristic-3",
       },
       {
-        title: "Lists",
-        href: "/lists",
+        title: "Is real text used rather than images of text?",
+        href: "/heuristic-4",
       },
       {
-        title: "Maths",
-        href: "/maths",
+        title: "Are form labels visible and persistent?",
+        href: "/heuristic-5",
       },
       {
-        title: "Notes",
-        href: "/notes",
+        title: "Are errors described in text?",
+        href: "/heuristic-6",
       },
       {
-        title: "Steps",
-        href: "/steps",
-      },
-      {
-        title: "Table",
-        href: "/table",
-      },
-      {
-        title: "Tabs",
-        href: "/tabs",
+        title: "Do form controls have visible meaningful text labels?",
+        href: "/heuristic-7",
       },
     ],
   },
-  {
-    title: "Screen Reader Support",
-    href: "/markdown",
-    items: [
-      {
-        title: "Cards",
-        href: "/cards",
-      },
-      {
-        title: "Diagrams",
-        href: "/diagrams",
-      },
-      {
-        title: "Filetree",
-        href: "/filetree",
-      },
-      {
-        title: "Lists",
-        href: "/lists",
-      },
-      {
-        title: "Maths",
-        href: "/maths",
-      },
-      {
-        title: "Notes",
-        href: "/notes",
-      },
-      {
-        title: "Steps",
-        href: "/steps",
-      },
-      {
-        title: "Table",
-        href: "/table",
-      },
-      {
-        title: "Tabs",
-        href: "/tabs",
-      },
-    ],
-  },
-  {
-    title: "Meaningful Content",
-    href: "/markdown",
-    items: [
-      {
-        title: "Cards",
-        href: "/cards",
-      },
-      {
-        title: "Diagrams",
-        href: "/diagrams",
-      },
-      {
-        title: "Filetree",
-        href: "/filetree",
-      },
-      {
-        title: "Lists",
-        href: "/lists",
-      },
-      {
-        title: "Maths",
-        href: "/maths",
-      },
-      {
-        title: "Notes",
-        href: "/notes",
-      },
-      {
-        title: "Steps",
-        href: "/steps",
-      },
-      {
-        title: "Table",
-        href: "/table",
-      },
-      {
-        title: "Tabs",
-        href: "/tabs",
-      },
-    ],
-  },
-  {
-    title: "Structure",
-    href: "/markdown",
-    items: [
-      {
-        title: "Cards",
-        href: "/cards",
-      },
-      {
-        title: "Diagrams",
-        href: "/diagrams",
-      },
-      {
-        title: "Filetree",
-        href: "/filetree",
-      },
-      {
-        title: "Lists",
-        href: "/lists",
-      },
-      {
-        title: "Maths",
-        href: "/maths",
-      },
-      {
-        title: "Notes",
-        href: "/notes",
-      },
-      {
-        title: "Steps",
-        href: "/steps",
-      },
-      {
-        title: "Table",
-        href: "/table",
-      },
-      {
-        title: "Tabs",
-        href: "/tabs",
-      },
-    ],
-  },
-  {
-    title: "Readability",
-    href: "/markdown",
-    items: [
-      {
-        title: "Cards",
-        href: "/cards",
-      },
-      {
-        title: "Diagrams",
-        href: "/diagrams",
-      },
-      {
-        title: "Filetree",
-        href: "/filetree",
-      },
-      {
-        title: "Lists",
-        href: "/lists",
-      },
-      {
-        title: "Maths",
-        href: "/maths",
-      },
-      {
-        title: "Notes",
-        href: "/notes",
-      },
-      {
-        title: "Steps",
-        href: "/steps",
-      },
-      {
-        title: "Table",
-        href: "/table",
-      },
-      {
-        title: "Tabs",
-        href: "/tabs",
-      },
-    ],
-  },
-  {
-    title: "Quality of Life",
-    href: "/markdown",
-    items: [
-      {
-        title: "Cards",
-        href: "/cards",
-      },
-      {
-        title: "Diagrams",
-        href: "/diagrams",
-      },
-      {
-        title: "Filetree",
-        href: "/filetree",
-      },
-      {
-        title: "Lists",
-        href: "/lists",
-      },
-      {
-        title: "Maths",
-        href: "/maths",
-      },
-      {
-        title: "Notes",
-        href: "/notes",
-      },
-      {
-        title: "Steps",
-        href: "/steps",
-      },
-      {
-        title: "Table",
-        href: "/table",
-      },
-      {
-        title: "Tabs",
-        href: "/tabs",
-      },
-    ],
-  },*/
 ]
