@@ -109,4 +109,45 @@ export const Documents: Paths[] = [
       },
     ],
   },
+  {
+    spacer: true,
+  },
+  {
+    title: "Introduction",
+    href: "/navigation",
+    heading: "Page Structure",
+  },
+  {
+    title: "Heuristics",
+    href: "/page-structure",
+    items: [
+      {
+        title: "Does each page have a meaningful title?",
+        href: "/heuristic-1",
+      },
+      {
+        title:
+          "Are links used for CTAs that take the user to a different location?",
+        href: "/heuristic-2",
+      },
+      {
+        title:
+          "Are buttons used for CTAs that trigger functionalities within the page?",
+        href: "/heuristic-3",
+      },
+      {
+        title: "Is all content placed within a landmark or region?",
+        href: "/heuristic-4",
+      },
+      {
+        title:
+          "Do section headings follow a hierarchical structure and do not skip any levels?",
+        href: "/heuristic-5",
+      },
+      {
+        title: "Are lists used to present groupings and enumerations?",
+        href: "/heuristic-6",
+      },
+    ],
+  },
 ]
