@@ -33,7 +33,7 @@ export default async function Pages({ params }: PageProps) {
           <h1 className="!mb-2 text-3xl !font-semibold">{frontmatter.title}</h1>
           <p className="-mt-4 text-sm">{frontmatter.description}</p>
           <div>
-            {frontmatter.owner[0] && (
+            {frontmatter.owner?.[0] && (
               <span
                 className={
                   "mr-3 rounded-full bg-blue-200 px-4 py-1 text-xs text-black"
@@ -42,7 +42,7 @@ export default async function Pages({ params }: PageProps) {
                 {frontmatter.owner[0]}
               </span>
             )}
-            {frontmatter.owner[1] && (
+            {frontmatter.owner?.[1] && (
               <span
                 className={
                   "rounded-full bg-green-200 px-4 py-1 text-xs text-black"
