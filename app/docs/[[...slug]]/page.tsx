@@ -22,6 +22,8 @@ export default async function Pages({ params }: PageProps) {
   if (!res) notFound()
 
   const { frontmatter, content, tocs } = res
+  const ownerArray = frontmatter?.owner
+  console.log(ownerArray)
   return (
     <div className="flex items-start gap-14">
       <section className="flex-[3] pt-10">
@@ -30,6 +32,26 @@ export default async function Pages({ params }: PageProps) {
         <Typography>
           <h1 className="!mb-2 text-3xl !font-semibold">{frontmatter.title}</h1>
           <p className="-mt-4 text-sm">{frontmatter.description}</p>
+          <div>
+            {frontmatter.owner[0] && (
+              <span
+                className={
+                  "mr-3 rounded-full bg-blue-200 px-4 py-1 text-xs text-black"
+                }
+              >
+                {frontmatter.owner[0]}
+              </span>
+            )}
+            {frontmatter.owner[1] && (
+              <span
+                className={
+                  "rounded-full bg-green-200 px-4 py-1 text-xs text-black"
+                }
+              >
+                {frontmatter.owner[1]}
+              </span>
+            )}
+          </div>
           <Separator className="my-6" />
           <section>{content}</section>
         </Typography>

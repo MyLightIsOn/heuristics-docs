@@ -27,6 +27,7 @@ type BaseMdxFrontmatter = {
   title: string
   description: string
   keywords: string
+  owner: string
 }
 
 async function parseMdx<Frontmatter>(rawMdx: string) {
