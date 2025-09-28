@@ -8,7 +8,6 @@ import { Typography } from "@/components/ui/typography"
 import { BackToTop } from "@/components/navigation/backtotop"
 import Feedback from "@/components/navigation/feedback"
 import PageBreadcrumb from "@/components/navigation/pagebreadcrumb"
-import Pagination from "@/components/navigation/pagination"
 import Toc from "@/components/navigation/toc"
 
 type PageProps = {
@@ -33,7 +32,6 @@ export default async function Pages({ params }: PageProps) {
           <p className="-mt-4 text-sm">{frontmatter.description}</p>
           <Separator className="my-6" />
           <section>{content}</section>
-          <Pagination pathname={pathName} />
         </Typography>
       </section>
 

@@ -25,7 +25,7 @@ export const Documents: Paths[] = [
   },
   {
     title: "Introduction",
-    href: "/navigation",
+    href: "/keyboard-interaction",
     heading: "Keyboard Interaction",
   },
   {
@@ -43,110 +43,8 @@ export const Documents: Paths[] = [
       },
       {
         title:
-          "Are all calls-to-action built to fully function with keyboard and touch in addition to the mouse?",
+          "Are buttons, links, and other CTAs designed and implemented to consider both hover and focus states?",
         href: "/heuristic-3",
-      },
-      {
-        title: "Are we avoiding keyboard traps?",
-        href: "/heuristic-4",
-      },
-      {
-        title:
-          "Are adjacent links pointing to unique locations combined into a single calls-to-action?",
-        href: "/heuristic-5",
-      },
-      {
-        title:
-          "Are users able to dismiss newly displayed content without moving their mouse or shifting focus?",
-        href: "/heuristic-6",
-      },
-      {
-        title: "Is there a skip-to-main-content link provided?",
-        href: "/heuristic-7",
-      },
-    ],
-  },
-  {
-    spacer: true,
-  },
-  {
-    title: "Introduction",
-    href: "/navigation",
-    heading: "Meaningful Content",
-  },
-  {
-    title: "Heuristics",
-    href: "/meaningful-content",
-    items: [
-      {
-        title:
-          "Are recurring navigation patterns and functionalities presented and labeled consistently throughout the system?",
-        href: "/heuristic-1",
-      },
-      {
-        title: "Are form labels meaningful?",
-        href: "/heuristic-2",
-      },
-      {
-        title: "Are we avoiding keyboard traps?",
-        href: "/heuristic-3",
-      },
-      {
-        title: "Is real text used rather than images of text?",
-        href: "/heuristic-4",
-      },
-      {
-        title: "Are form labels visible and persistent?",
-        href: "/heuristic-5",
-      },
-      {
-        title: "Are errors described in text?",
-        href: "/heuristic-6",
-      },
-      {
-        title: "Do form controls have visible meaningful text labels?",
-        href: "/heuristic-7",
-      },
-    ],
-  },
-  {
-    spacer: true,
-  },
-  {
-    title: "Introduction",
-    href: "/navigation",
-    heading: "Page Structure",
-  },
-  {
-    title: "Heuristics",
-    href: "/page-structure",
-    items: [
-      {
-        title: "Does each page have a meaningful title?",
-        href: "/heuristic-1",
-      },
-      {
-        title:
-          "Are links used for CTAs that take the user to a different location?",
-        href: "/heuristic-2",
-      },
-      {
-        title:
-          "Are buttons used for CTAs that trigger functionalities within the page?",
-        href: "/heuristic-3",
-      },
-      {
-        title: "Is all content placed within a landmark or region?",
-        href: "/heuristic-4",
-      },
-      {
-        title:
-          "Do section headings follow a hierarchical structure and do not skip any levels?",
-        href: "/heuristic-5",
-      },
-      {
-        title: "Are lists used to present groupings and enumerations?",
-        href: "/heuristic-6",
       },
     ],
   },
