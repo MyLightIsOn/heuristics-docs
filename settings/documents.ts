@@ -46,6 +46,11 @@ export const Documents: Paths[] = [
           "Are buttons, links, and other CTAs designed and implemented to consider both hover and focus states?",
         href: "/heuristic-3",
       },
+      {
+        title:
+          "Are all calls-to-action built to fully function with keyboard and touch in addition to the mouse?",
+        href: "/heuristic-4",
+      },
     ],
   },
 ]

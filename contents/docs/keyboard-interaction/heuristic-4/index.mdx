@@ -1,23 +1,26 @@
 ---
-title: Are we avoiding keyboard traps?
+title: Are all calls-to-action built to fully function with keyboard and touch in addition to the mouse?
+keywords: ["keyboard interaction", "focus", "hover", "tabbing"]
+owner: ["developer"]
 ---
 
 ### What this means
-A keyboard trap happens when someone using the keyboard gets stuck on a part of the page and cannot move forward or backward using the `Tab` or `Shift + Tab` keys. It is like falling into a hole with no way out. You are stuck on a form field, modal, iframe, or custom widget, and there is no way to continue navigating without a mouse.
+Calls-to-action, like buttons, links, icons, or custom components, should work no matter how a user interacts with them. That includes mouse, keyboard, and touch input. Users should be able to tab to, tap, or click any interactive element and get the same consistent result.
 
-Keyboard users need to be able to move freely through a page. If any part of the interface traps focus without an escape method, the user experience breaks down.
+Keyboard users often rely on the `Tab`, `Enter`, and `Space` keys to navigate and activate elements. Mouse users expect something to happen when they click on a seemingly interactive element. Touchscreen users expect to be able to tap without friction or unusual behavior. If any of those interaction types fail, users may be unable to complete their task.
 
 ### Why this matters
-Not everyone uses a mouse. Many assistive technologies work with keyboard interactions. This means that for many users, the keyboard is their only way to navigate.  If they get stuck in a modal, menu, or embedded widget, they may have to reload the page or abandon their task entirely.
+It is easy to design something that looks interactive but only works with a mouse. A clickable `div` might not be focusable or operable with the keyboard (Always use semantic elements when possible). Some elements may not respond properly to touch on mobile devices or may behave unpredictably with assistive tech.
 
-Keyboard traps are more than just frustrating. They can block access to important information or functionality, making parts of a site completely unusable for some users.
+If a user cannot activate a button, link, or other interactive element using their preferred or required input method, the experience becomes broken for them. Accessibility means supporting all the ways people interact with digital content, not just the ones most familiar to us.
 
 ### What to check for
-- Can you tab into and out of every section of the page?
-- When a modal or pop-up opens, does it trap focus in a way that is intentional and controlled?
-- Can you exit modals or pop-ups using the `Escape` key or a visible close button?
-- Are iframes or embedded widgets keyboard-accessible and not causing tabbing issues?
-- Do custom components (e.g., menus, sliders, date pickers) all the user to enter and leave freely?
+- Can you tab to every button, link, and custom component using only the keyboard?
+- Can you activate each interactive element using `Enter` or `Space`?
+- Do all elements respond properly on a touchscreen without requiring awkward workarounds?
+- Are custom components like modals, sliders, or dropdowns fully operable with a keyboard and touch?
+- Do any elements require a mouse? (They shouldn't)
 
 ### Related Standards
-- **[WCAG 2.2 – 2.1.2](https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap.html)** - No Keyboard Trap
+- **[WCAG 2.2 – 2.1.1](https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html)** - Keyboard
+- **[WCAG 2.2 – 2.5.1](https://www.w3.org/WAI/WCAG21/Understanding/pointer-gestures.html)** - Pointer Gestures
