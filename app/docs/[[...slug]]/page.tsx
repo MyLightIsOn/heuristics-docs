@@ -22,9 +22,7 @@ export default async function Pages({ params }: PageProps) {
   if (!res) notFound()
 
   const { frontmatter, content, tocs } = res
-  const ownerArray = frontmatter?.owner
-  console.log(ownerArray)
-  return (
+````  return (
     <div className="flex items-start gap-14">
       <section className="flex-[3] pt-10">
         <PageBreadcrumb paths={slug} />

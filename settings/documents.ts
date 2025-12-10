@@ -33,7 +33,7 @@ export const Documents: Paths[] = [
     href: "/keyboard-interaction",
     items: [
       {
-        title: "Is tabbing order predictable, logical, and intuitive?",
+        title: "Is focus order predictable, logical, and intuitive?",
         href: "/heuristic-1",
       },
       {
@@ -50,6 +50,11 @@ export const Documents: Paths[] = [
         title:
           "Are all calls-to-action built to fully function with keyboard and touch in addition to the mouse?",
         href: "/heuristic-4",
+      },
+      {
+        title:
+          "Are there no keyboard traps that prevent users from navigating the page?",
+        href: "/heuristic-5",
       },
     ],
   },
