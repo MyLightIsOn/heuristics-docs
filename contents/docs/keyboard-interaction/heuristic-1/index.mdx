@@ -1,5 +1,5 @@
 ---
-title: Is tabbing order predictable, logical, and intuitive?
+title: Is focus order predictable, logical, and intuitive?
 keywords: ["keyboard interaction", "focus order", "tabbing"]
 owner: ["designer","developer"]
 ---
@@ -7,14 +7,14 @@ owner: ["designer","developer"]
 ### What this means
 When someone uses the keyboard to move through a page, typically by pressing the `Tab` key, the order in which interactive elements receive focus should make sense. Focus should follow the visual reading flow of the page. That usually means left to right and top to bottom.
 
-If the tabbing order jumps around unexpectedly or skips important elements, it makes the interface harder to use and understand.
+If the focus order jumps around unexpectedly or skips important elements, it makes the interface harder to use and understand.
 
-Focus should **ONLY** be on interactive elements, like buttons and form fields. Regular text should be skipped as it is not interactive.
+**ONLY** interactive elements should recieve focus. Elements such as buttons, links, and form fields. Regular text should be skipped as it is not interactive.
 
 ### Why this matters
-Keyboard users do not experience the whole interface at once. They move through it one element at a time. If the tab order is unpredictable, people can get lost, miss key actions, or become confused about where they are. That can result in missed content, broken tasks, and a frustrating experience.
+Keyboard users do not experience the whole interface at once. They move through the interface one element at a time. If the focus order is unpredictable, users can get lost or miss key actions. That can result in a frustrating experience.
 
-For users of screen readers, the tabbing order is also how content is announced. A logical, intuitive flow improves usability for everyone.
+For screen readers users, the focus order is also how content is announced. A logical, intuitive flow improves usability for these users.
 
 ### What this looks like
 <div className={'diagram-container flex-col lg:flex-row'}>
@@ -35,11 +35,15 @@ For users of screen readers, the tabbing order is also how content is announced.
 - **[Example 4](/examples/keyboard-interaction/heuristic-1/4)** - Bad dialog tab order
 
 ### What to check for
-- Does focus move from left to right and top to bottom in a way that matches the visual layout?
-- Are key elements, like buttons and form fields, included in the tab order?
+- Does focus move from left to right and top to bottom in a way that matches the visual layout? (In right-to-left languages, this is reversed.)
+- Are key elements, like buttons and form fields, included in the focus order?
 - Do modals and overlays move focus into the new content when opened?
-- When those elements close, does focus return to where it started?
+- When those elements close, does the focus return to the element that opened it?
+
+### What to avoid
+- Are there non-interactive elements in the focus order?
 - Are there any elements that unexpectedly receive focus, such as hidden or offscreen items?
+- Does the focus move around in unexpected directions?
 
 ### Related Standards
 - **[WCAG 2.2 – 2.4.3](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html)** - Focus Order
