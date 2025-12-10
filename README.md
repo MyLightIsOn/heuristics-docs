@@ -1,6 +1,6 @@
-# A11yBase Heuristic Learning System 
+# A11y Heuristics Learning System 
 
-Welcome to the **A11yBase **—a user-centered accessibility learning tool designed to help teams build more inclusive digital experiences from the start.
+Welcome to the **A11y Heuristics **—a user-centered accessibility learning tool designed to help teams build more inclusive digital experiences from the start.
 
 ## What is the ABD System?
 

@@ -4,7 +4,7 @@ export const siteicon = "/icon.png"
 export const gtm = "GTM-XXXXXXX"
 export const gtmconnected = true
 
-export const sitename = "A11yBase"
+export const sitename = "A11y Heuristics"
 export const description =
   "Start with people. Learn with questions. Build accessible experiences."
 export const keywords = [
@@ -15,7 +15,7 @@ export const keywords = [
   "ux design",
 ]
 export const urlimage = "/images/og-image.png"
-export const imagealt = "A11yBase Documentation"
+export const imagealt = "A11y Heuristics Documentation"
 export const twitterhandle = "@A11yDesignLab"
 
 export const companyname = "A11y Design Lab"
